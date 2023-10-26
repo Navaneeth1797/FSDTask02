@@ -1,0 +1,65 @@
+WRITE A BLOG ON THE DIFFERENCE BETWEEN DOCUMENT AND WINDOW OBJECTS
+
+1. DOCUMENT OBJECT (document):
+
+The document object represents the web page itself and provides methods and properties to interact with the content of the web page. It represents the entire HTML document and allows us to access and manipulate the various elements within the document, such as HTML elements, attributes, and text. We can also use the document object to modify the structure, content, and styling of the webpage.
+
+ We can use the document.getElementById(), document.querySelector(), and document.createElement() methods to manipulate elements within the page.
+
+
+2. WINDOW OBJECT (window):
+
+The window object represents the browser window or tab that contains the web page. It is the top-level object in the browser's JavaScript environment and provides access to various properties and methods related to the browser window and the browsing context. The window object handles things like managing the browser's history, opening new windows or tabs, and controlling aspects of the browser's behavior.
+
+ The window object includes properties like window.location, window.history, and methods like window.open() and window.alert().
+
+
+                    DIFFERENCE BETWEEN DOCUMENT AND WINDOW OBJECTS
+
+
+1.PURPOSE AND FUNCTIONALITY:
+
+DOCUMENT OBJECT (document):
+
+PURPOSE: The document object represents the HTML document currently loaded in the browser. It's primarily concerned with the content of the webpage.
+
+FUNCTIONALITY: The document object provides an interface for accessing and manipulating the HTML structure and content of the webpage. We can use it to interact with HTML elements, change their properties, add or remove elements, and modify the content of the page.
+
+WINDOW OBJECT (window):
+
+PURPOSE: The window object represents the browser window or tab containing the web page. It deals with the browser environment and window management.
+
+FUNCTIONALITY: The window object offers control over various aspects of the browser's behavior. It manages the browser's history, handles window and tab operations, and provides access to the global environment of the browser, which includes the document object. It also handles events like resizing, scrolling and navigation.
+
+
+2. SCOPE:
+
+DOCUMENT OBJECT (document):
+
+SCOPE: The document object's scope is limited to the content of the HTML document. It provides access to HTML elements, their attributes, and the document's structure. It allows to interact with and manipulate the page's content.
+
+WINDOW OBJECT (window):
+
+SCOPE: The window object has a broader scope as it encompasses the entire browser window or tab. It provides access to not only the document object but also properties and methods related to the browser's navigation, history, location, and global environment.
+
+
+3. EXAMPLES OF USAGE:
+
+DOCUMENT OBJECT (document):
+
+We can use the document object to:
+Select and manipulate HTML elements using methods like getElementById(), querySelector(), and getElementsByClassName().
+Modify the content of elements with methods like innerHTML or textContent.
+Create new elements and add them to the document with methods like createElement() and appendChild().
+Change CSS properties to update the styling of elements.
+
+WINDOW OBJECT(window):
+
+We can use the window object to:
+Control browser navigation with methods like window.location.assign() or window.history.back().
+Open new browser windows or tabs with window.open().
+Manage browser behavior through methods like window.alert(), window.confirm(), and window.prompt().
+Set and retrieve information about the browser's location with window.location.
+
+
+In summary, the document object primarily deals with the content and structure of the webpage, allowing us to manipulate HTML elements and their attributes. In contrast, the window object handles browser-specific functionality, enabling us to control the browser's navigation, manage windows and tabs, and interact with the global browser environment. Both objects play crucial roles in creating dynamic and interactive web applications.
